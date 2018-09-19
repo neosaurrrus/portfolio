@@ -1,0 +1,72 @@
+<svg width="1440" height="600" viewBox="0 0 1440 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>1</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(485 500)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -485 -500L 955 -500L 955 100L -485 100L -485 -500Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="1" clip-path="url(#clip-0)">
+<path d="M -485 -500L 955 -500L 955 100L -485 100L -485 -500Z" fill="#0064AA"/>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(84 -149)" fill="#1E4F33"/>
+</g>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(295 -138)" fill="#1E4F33"/>
+</g>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(499 -149)" fill="#1E4F33"/>
+</g>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(686 -138)" fill="#1E4F33"/>
+</g>
+<g id="Star">
+<use xlink:href="#path1_fill" transform="matrix(0.906308 -0.422618 0.422618 0.906308 -391.149 -428.203)" fill="#F7DB86"/>
+</g>
+<g id="Star">
+<use xlink:href="#path2_fill" transform="matrix(1 2.22045e-16 -2.22045e-16 1 -14.5768 -183.351)" fill="#F7DB86"/>
+</g>
+<g id="Star">
+<use xlink:href="#path2_fill" transform="matrix(-1 -3.44509e-16 3.44509e-16 -1 -26.5768 -387.351)" fill="#F7DB86"/>
+</g>
+<g id="Star">
+<use xlink:href="#path2_fill" transform="matrix(-1 -3.44509e-16 3.44509e-16 -1 -444 -121)" fill="#F7DB86"/>
+</g>
+<g id="Star">
+<use xlink:href="#path2_fill" transform="matrix(-1 -3.44509e-16 3.44509e-16 -1 -224.577 -181.351)" fill="#F7DB86"/>
+</g>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(-142 -149)" fill="#1E4F33"/>
+</g>
+<g id="Far Mountain">
+<use xlink:href="#path0_fill" transform="translate(-361 -173)" fill="#1E4F33"/>
+</g>
+<g id="Mountain 1">
+<use xlink:href="#path3_fill" transform="translate(-355 -191)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.6">
+<use xlink:href="#path3_fill" transform="translate(-547 -174)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.1">
+<use xlink:href="#path3_fill" transform="translate(-130 -191)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.2">
+<use xlink:href="#path3_fill" transform="translate(94 -174)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.3">
+<use xlink:href="#path3_fill" transform="translate(303 -159)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.4">
+<use xlink:href="#path3_fill" transform="translate(492 -149)" fill="#2C8259"/>
+</g>
+<g id="Mountain 1.5">
+<use xlink:href="#path3_fill" transform="translate(680 -138)" fill="#2C8259"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 71.5 0L 133.421 188.25L 9.57918 188.25L 71.5 0Z"/>
+<path id="path1_fill" d="M 11.5 0L 14.0819 6.90983L 22.4371 6.90983L 15.6776 11.1803L 18.2595 18.0902L 11.5 13.8197L 4.74047 18.0902L 7.32238 11.1803L 0.56285 6.90983L 8.91809 6.90983L 11.5 0Z"/>
+<path id="path2_fill" d="M 11.5 0L 14.1497 6.82865L 22.4371 6.90983L 15.7874 11.2113L 18.2595 18.0902L 11.5 13.92L 4.74047 18.0902L 7.21264 11.2113L 0.56285 6.90983L 8.85026 6.82865L 11.5 0Z"/>
+<path id="path3_fill" d="M 168.5 0L 314.425 293.25L 22.5747 293.25L 168.5 0Z"/>
+</defs>
+</svg>
