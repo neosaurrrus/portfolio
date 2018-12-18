@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Someone Somewhere. WebThing.</title>
-<link rel="stylesheet" href="resources/css/portfolio.css">
+    <title>Lukie Kang's Web Development Site!</title>
+    <link rel="stylesheet" href="resources/css/portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the portfolio page of Lukie Kang" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Lukie Kang" />
+    <meta property="og:url" content="https://lukiekang.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="This is the portfolio site for Lukie Kang, a web developer based around London" />
+    <meta property="og:image" content="resources/images/me.jpg">
+    <!-- Twitter Card Metadata -->
+    <meta property="twitter:title" content="Lukie Kang - Webdev" />
+    <meta property="twitter:card" content="The portfolio site of an awesome guy in London" />
+    <meta property="twitter:url" content="https://lukiekang.com" />
+    <meta property="twitter:image" content="resources/images/me.jpg" />
+    <meta property="twitter:creator" content="@lukie_k" />
+  
 </head>
 
 <body>
@@ -13,72 +28,83 @@
     <div class="hero-image hero2"></div>
     <div class="hero-image hero3"></div>
     <div class="hero">
+        <nav>
+            <ul>
+                <li>
+                    <button class="meLink navButton" tabindex="0">about me</button>
+                </li>
+                <li>
+                    <button class="projectsLink navButton" tabindex="0">my stuff</button>
+                </li>
+                <li>
+                    <button class="originLink navButton" tabindex="0">origin story</button>
+                </li>
+            </ul>
+        </nav>
         <div class="hero-text">
             <h1>
-                <div><span class="hero-line">Example_Name</span></div>
+                <div><span class="hero-line">Lukie Kang</span></div>
             </h1>
             <h2>
-                <div><span class="hero-line">let role = <span class="title">Something</span></div>
+                <div><span class="hero-line">Web <span class="title">Guy</span></div>
             </h2>
         </div>  
     </div>
 </div>
-<nav>
-    <ul>
-        <li>
-            <h3 class="meLink navButton">about me</h3>
-        </li>
-        <li>
-            <h3 class="projectsLink navButton">my stuff</h3>
-        </li>
-        <li>
-            <h3 class="originLink navButton">origin story</h3>
-        </li>
-    </ul>
-</nav>
+
 <div class="site-wrap">
-    <div class="me-parent">
-            <div class="section">
-                <div class="sidebox">
-                    <img class="sidepic" src="resources/images/me.jpg">
-                </div>
-                <div class="rightbox textbox">
-                    <h3>Hey there!</h3>
-                    <p>I am a web developer based in London,UK. I have worked in Systems Admin, solution architecture and business analysis. Now focusing on web development as creating is what I love the most*</p>
-                    <p class="tiny">* Not including my lovely wife. And <a href="#">adventures</a></p>
-                </div>
-            </div>
-            <div class="section">
+    <div class="me parent">
+            <section>
                 <div class="leftbox textbox">
-                    <h3>This is what I can do</h3>
-                    <p>I understand problems, I design web apps, and solve problems. I use modern web technologies and common sense to make something that works whatever the device.
-                    </p>
+                    <h3>Hey there!</h3>
+                    <p>I am a web developer based in London,UK. In past lives, I have worked in Systems Admin, Solution Architecture and Business Analysis. I have learnt that creating things for people, and taking away life's annoyances, is what I love the most*</p>
+                    <p class="tiny">* Not including my lovely wife. Food and occasionally super-long distance car journies</p>
                 </div>
+                <div class="sidebox">
+                    <img alt="Lukie wearing a giant tortoise" class="sidepic" src="resources/images/me.jpg">
+                </div>
+            </section>
+            <section>
                 <div class="skills-pic sidebox">
                     <div class="skills-slider"></div>
                 </div>
-            </div>
-            <div class="section">
+                <div class="rightbox textbox">
+                    <h3>This is what I can do</h3>
+                    <p>I understand people, I design solutions, and make problems go away. I use modern web technologies and practical analysis to make something that works whatever the device and whoever the person.
+                    </p>
+                </div>
+               
+            </section>
+            <section>
                 <div class="centerbox textbox">
                     <h3>Let's be sociable</h3>
-                    <p>Currently seeking new web development work. Also happy to get to know like-minded folk, always plenty to learn!</p>
+                    <p>Happy to get to know like-minded folk, Check out my blog on Medium for a decent idea of what I am working on right now or ping me on the social medias.</p>
                     <div class="social">
+                        <a href="https://medium.com/@lukiek"><img src="resources/images/medium.png"></a>
                         <a href="https://twitter.com/lukie_k"><img src="resources/images/twitter.png"></a>    
                         <a href="https://github.com/neosaurrrus"><img id="github" src="resources/images/github.png"></a>
-                        <a href="mailto:lukie@brightdragon.co.uk"><img src="resources/images/email.png"></a>
                         <a href="https://www.facebook.com/lukiekang"><img src="resources/images/facebook.png"></a>
-                        <a href="https://medium.com/@lukiek"><img src="resources/images/medium.png"></a>
                     </div>
                 </div>
+            </section>
+    </div>
+    <div class="projects parent">
+        <section>
+            <div class="centerbox textbox">
+                <h3>Stuff I made</h3>
+                <p> These are my greatest hits so far, the longer form projects that combine various skills to make something. Or at least the ones that are easily demoed. I have an embarrassing amount of applications I would love to build if I find time so expect more here soon!</p>
             </div>
+        </section>
     </div>
-    <div class="projects-parent">
-
-    </div>
-    <div class="origin-parent"> 
+    <div class="origin parent"> 
+        <section>
+            <div class="centerbox textbox">
+                <h3>How did I get here?</h3>
+                <p>Learning how to web develop nowadays is a lot more fun than thumbing through a thousand page manual on your own. Here are some of my learning methods...so far. The code behind the apps remains untouched from the time I first wrote it, but I like seeing where I have come from!</p>
+            </div>
+        </section>
     </div>
 </div>
-
 </body>
 <script src="resources/js/portfolio.js"></script>
 </html>
