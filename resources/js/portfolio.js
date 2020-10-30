@@ -1,4 +1,7 @@
-//global variables - tut tut
+
+// Hey, if you are checking out how I made this portfolio. Note that I think the JS approach here is slightly mad but as its just for me, I can deal with it. 
+
+//global variables - tut tut.
 let textOnLeft = false;
 let projectHTML = [];
 let originHTML = [];
@@ -45,7 +48,7 @@ function backgroundSwitch(oneLeft, twoLeft, threeLeft) {
 meNav.addEventListener("click", function() {
   colorSwitch(0, "rgb(44,130,89)", "rgb(30,79,54)", "rgb(255, 240, 100");
   backgroundSwitch("0%", "100%", "200%");
-  title.innerHTML = "Guy";
+  title.innerHTML = "Developer";
   me.style.setProperty("display", "block");
   projects.style.setProperty("display", "none");
   origin.style.setProperty("display", "none");
@@ -56,7 +59,7 @@ meNav.addEventListener("click", function() {
 projectsNav.addEventListener("click", function() {
   colorSwitch(50, "rgb(189,59,4)", "rgb(79,51,30)", "rgb(255, 240, 60");
   backgroundSwitch("-100%", "0%", "100%");
-  title.innerHTML = "Dev";
+  title.innerHTML = "Projects";
   me.style.setProperty("display", "none");
   projects.style.setProperty("display", "block");
   origin.style.setProperty("display", "none");
@@ -67,7 +70,7 @@ projectsNav.addEventListener("click", function() {
 originNav.addEventListener("click", function() {
   colorSwitch(100, "rgb(0,53,133)", "rgb(0,30,50)", "rgb(255,240,30)");
   backgroundSwitch("-200%", "-100%", "0%");
-  title.innerHTML = "Student";
+  title.innerHTML = "Learnings";
   me.style.setProperty("display", "none");
   projects.style.setProperty("display", "none");
   origin.style.setProperty("display", "block");
@@ -118,30 +121,43 @@ function addContent(title, text, sidepic, codeLink, isLeft) {
 }
 //build the Project items
 function projectBuild() {
+
+  projectArray.push(
+    new Project(
+      "Prompt Planning Poker",
+      "Easy Estimation for SCRUM Teams. This app is an online version of the popular sprint planning tool, Planning Poker. Built with React and Redux on the Front End, with Ruby on Rails on the backend.",
+      "resources/images/ppp.png",
+      "https://github.com/neosaurrrus/prompt-planning-poker"
+    )
+  );
+
+  projectArray.push(
+    new Project(
+      "Invite.li",
+      "A No-fuss way to find dates between friends. The main focus was to be quick and painless with minimal hurdles. React on the Frontend while Firebase handles database duties here",
+      "resources/images/inviteli.jpg",
+      "https://github.com/neosaurrrus/invitomatic"
+    )
+  );
+
+  projectArray.push(
+    new Project(
+      "SubsChef",
+      "An app to record ingredients that can be swapped for other ingredients. Great if you don't have a certain recipe. Built entirely with Ruby on Rails",
+      "resources/images/subschef.png",
+      "https://github.com/neosaurrrus/ingredient-substitutions/"
+    )
+  );
   projectArray.push(
     new Project(
       "Stroll Trek Run",
-      "An application that invites users to view, create and comment on thier favourite walking trails, with a focus on good design and clarity for the user. It was made using mostly Express, Node and MongoDB. There are a number of features I would like to build onto this one one day, but for now, its functional.",
+      "A way to record your favourite walking trails. It uses JavaScript on the Frontend, It was made using Node, Express and MongoDB on the backend.",
       "resources/images/strolltrekrun.jpg",
-      "https://strolltrekrun.com"
+      "https://github.com/neosaurrrus/stroll-trek-run"
     )
   );
-  projectArray.push(
-    new Project(
-      "Inviteli",
-      "A No-fuss way to find dates between friends. Creating this taught me a lot about React. I like how State and components can be managed to bring together web application without getting a headache! Firebase handles database duties here",
-      "resources/images/inviteli.jpg",
-      "https://invite.li"
-    )
-  );
-  projectArray.push(
-    new Project(
-      "Kangdemic",
-      "A clone of a popular board game, Pandemic. This was the first real project I started for myself when I started learning Javascript. It's not terribly coded but that's the best way to appreciate good coding practise! Purely front-end, it uses HTML, CSS and JS only",
-      "resources/images/kangdemic.jpg",
-      "https://neosaurrrus.github.io/Kangdemic/"
-    )
-  );
+
+
 }
 
 //build the origin items
@@ -149,15 +165,17 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Codecademy and Free Code Camp`,
-      `Though I dabbled with HTML, CSS and Javascript for a decent chunk of my career, I wanted to learn it properly. Both of these sites were instrumental in getting the basics down in a non-scary way. I have come a long way since <a href="https://neosaurrrus.github.io/first-blog/">my first attempts</a>`,
+      `Both of these sites are fully recommended in getting the basics down in a non-scary way. There is a mountain of knowledge to climb, and these are a pretty decent starting point. We all have to take our <a href="https://neosaurrrus.github.io/guessing-game">first steps</a> to get anywhere.`,
       `resources/images/codecademy.jpg`,
       "https://www.codecademy.com"
     )
   );
+
+
   originArray.push(
     new Origin(
       `Udemy`,
-      `I learn best by seeing an example of it done, and then replicating with my own twist so videos suit me plenty. Udemy has alot of courses but you need to do a little research to work out good ones from the bad or outdated. My most influencial ones were Colt Steele's Web Developer Bootcamp (which has a <a href="https://neosaurrrus.github.io/colour-picker">cool colour picking game</a> you make), Anthony Alicea's Understanding Javascript: The wierd parts and Stephen Grider's ES6 course`,
+      `I always learnt best with seeing an example, and then recreating with my own ideas on what I'd like to see. Udemy has alot of courses with plenty of ideas but you need to do a little research to work out good ones from the bad or outdated. I used to recommend Colt Steele's Web Developer Bootcamp (which has a <a href="https://neosaurrrus.github.io/colour-picker">cool colour picking game</a> you make), Anthony Alicea's Understanding Javascript: The wierd parts and Stephen Grider's ES6 course. I bet there is newer nowadays though`,
       `resources/images/udemy.png`,
       `https://www.udemy.com/`
     )
@@ -165,7 +183,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Wes Bos' Courses`,
-      `When it comes to videos though, Wes Bos is my main guy. He has a number of free and paid courses on topics such as JS, React, Command-line and CSS. I think the JS30 course cannot be recommended enough for any budding JS dev. Check out this <a href="https://neosaurrrus.github.io/formula-flexbox/">sweet formula one</a> flexbox technique I learnt as part of Javascript30. Or just chill with some <a href="https://neosaurrrus.github.io/piano/">piano</a>?`,
+      `When it comes to videos however, Wes Bos is top drawer stuff. He has a number of free and paid courses on topics such as JS, React, Command-line and CSS. I think the Javascript Basics and JS30 courses cannot be recommended enough for any budding JS dev. Check out this <a href="https://neosaurrrus.github.io/formula-flexbox/">sweet formula one</a> flexbox technique I learnt from Javascript30. Or just chill with some <a href="https://neosaurrrus.github.io/piano/">piano</a>?`,
       `resources/images/wesbos.jpg`,
       `https://wesbos.com/`
     )
@@ -173,7 +191,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Enlisting in the CodeWars`,
-      `When I spend much of my learning time on new things and making <a href="https://neosaurrrus.github.io/KPong/">pong clones</a> its easy to forget how to do the basics. CodeWars is a great site for forcing me to practice the core stuff. It provides coding challenges to solve with the killer feature of seeing how others solved it once you are done.  `,
+      `When you spend time on projects and making <a href="https://neosaurrrus.github.io/KPong/">pong clones</a> its easy to get sloppy about the core techniques behind it all. CodeWars is a great site (amoung others) to practice the core stuff, solving challenges in an efficient way. It provides coding challenges to solve with the killer feature of seeing how others solved it once you are done.`,
       `resources/images/codewars.jpg`,
       "https://www.codewars.com"
     )
@@ -181,17 +199,18 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Podcasts, Websites and Books`,
-      `Podcasts are great for times my ears are free. Syntax and Code Newbie are my favourite Web Dev ones. CSS Tricks is my favourte website to browser for Web Dev news. I prefer books for more design based learning, I can definately recommend Don't Make me Think and Design for Hackers. The 'why?' of what we make fascinates me, though sometimes there is just <a href="https://i-am-a-bear-lukie.netlify.com/">no reason at all</a>.`,
+      `Podcasts are great for times when your ears are free. Code Newbie is a great place to hear about people's coding journies and getting motivated, Syntax is great for keeping abreast of whats going on in Web Dev and plenty of tasty tips to try. CSS Tricks and Dev.to are my favourte websites to browse for Web Dev news. I prefer books for more UX related things, I can definately recommend Don't Make me Think and Design for Hackers. The 'why?' of what we make fascinates me, though sometimes there is just <a href="https://optimistic-shaw-3fa4ae.netlify.app/">no reason at all</a>.`,
       `resources/images/syntax.png`,
       "https://syntax.fm/"
     )
   );
+
   originArray.push(
     new Origin(
-      `Blogging`,
-      `Another plug for my blog here! When you have to think of how to write down how something is done it does help your own understanding of it. I did begin writing my own but I like the socialness of <a href="https://medium.com/@lukiek">Medium</a>. My blog started out as just a dump of my notes but slowly I am getting better at taking my time to write for an audience. If I ever get one! `,
-      `resources/images/medium.jpg`,
-      "https://medium.com/@lukiek"
+      `FlatIron Software Engineering Bootcamp`,
+      `The glue that put it all together for me, Flatiron was instrumental in bringing things together and explaining the 'why' of the things we do.  I built a bunch of things as part of the course, but I have a sweet spot for the first project which was building a CLI app using Ruby: <a href="https://github.com/neosaurrrus/f1_competitors/">F1 Competitors</a>`,
+      `resources/images/flatironschool.png`,
+      "https://flatironschool.com/"
     )
   );
 }

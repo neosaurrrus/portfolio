@@ -176,7 +176,6 @@ button{
 }
 
 
-
 section {
     flex-wrap: wrap;
     display:flex;
@@ -196,7 +195,7 @@ section:nth-child(odd) {
     background:var(--offblack);
     margin: 0 auto;
     box-shadow: 10px 20px var(--darkbackground);
-    border-radius: 5%;
+    border-radius: 20px;
 }
 .textbox {
     margin: 0 auto;
@@ -206,7 +205,7 @@ section:nth-child(odd) {
     justify-content: center;
     padding: 10px 0 10px 0;
     box-shadow: 10px 20px var(--darkbackground);
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 .rightbox{
