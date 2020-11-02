@@ -254,6 +254,10 @@ section:nth-child(odd) {
     transition: transform 300ms ease-in-out
 }
 
+.social-link{
+    height: 60px;
+}
+
 @media only screen and (max-width: 725px) {
 
     nav{
