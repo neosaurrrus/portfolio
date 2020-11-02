@@ -107,12 +107,12 @@ function addContent(title, text, sidepic, codeLink, isLeft) {
                 <h3>${title}</h3>
                 <p>${text}</p>
             </div>
-            <div class="sidebox"><a href="${codeLink}"><img class="sidepic" src="${sidepic}"></a></div>
+            <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
         </section>
         `;
   } else
     return `<section>
-            <div class="sidebox"><a href="${codeLink}"><img class="sidepic" src="${sidepic}"></a></div>
+            <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
             <div class="rightbox textbox">
                <h3>${title}</h3>
                 <p>${text}</p>
@@ -165,7 +165,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Codecademy and Free Code Camp`,
-      `Both of these sites are fully recommended in getting the basics down in a non-scary way. There is a mountain of knowledge to climb, and these are a pretty decent starting point. We all have to take our <a href="https://neosaurrrus.github.io/guessing-game">first steps</a> to get anywhere.`,
+      `Both of these sites are fully recommended in getting the basics down in a non-scary way. There is a mountain of knowledge to climb, and these are a pretty decent starting point. We all have to take our <a href="https://neosaurrrus.github.io/guessing-game"  target="_blank">first steps</a> to get anywhere.`,
       `resources/images/codecademy.jpg`,
       "https://www.codecademy.com"
     )
@@ -175,7 +175,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Udemy`,
-      `I always learnt best with seeing an example, and then recreating with my own ideas on what I'd like to see. Udemy has alot of courses with plenty of ideas but you need to do a little research to work out good ones from the bad or outdated. I used to recommend Colt Steele's Web Developer Bootcamp (which has a <a href="https://neosaurrrus.github.io/colour-picker">cool colour picking game</a> you make), Anthony Alicea's Understanding Javascript: The wierd parts and Stephen Grider's ES6 course. I bet there is newer nowadays though`,
+      `I always learnt best with seeing an example, and then recreating with my own ideas on what I'd like to see. Udemy has alot of courses with plenty of ideas but you need to do a little research to work out good ones from the bad or outdated. I used to recommend Colt Steele's Web Developer Bootcamp (which has a <a href="https://neosaurrrus.github.io/colour-picker"  target="_blank">cool colour picking game</a> you make), Anthony Alicea's Understanding Javascript: The wierd parts and Stephen Grider's ES6 course. I bet there is newer nowadays though`,
       `resources/images/udemy.png`,
       `https://www.udemy.com/`
     )
@@ -183,7 +183,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Wes Bos' Courses`,
-      `When it comes to videos however, Wes Bos is top drawer stuff. He has a number of free and paid courses on topics such as JS, React, Command-line and CSS. I think the Javascript Basics and JS30 courses cannot be recommended enough for any budding JS dev. Check out this <a href="https://neosaurrrus.github.io/formula-flexbox/">sweet formula one</a> flexbox technique I learnt from Javascript30. Or just chill with some <a href="https://neosaurrrus.github.io/piano/">piano</a>?`,
+      `When it comes to videos however, Wes Bos is top drawer stuff. He has a number of free and paid courses on topics such as JS, React, Command-line and CSS. I think the Javascript Basics and JS30 courses cannot be recommended enough for any budding JS dev. Check out this <a href="https://neosaurrrus.github.io/formula-flexbox/"  target="_blank">sweet formula one</a> flexbox technique I learnt from Javascript30. Or just chill with some <a href="https://neosaurrrus.github.io/piano/"  target="_blank">piano</a>?`,
       `resources/images/wesbos.jpg`,
       `https://wesbos.com/`
     )
@@ -191,7 +191,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Enlisting in the CodeWars`,
-      `When you spend time on projects and making <a href="https://neosaurrrus.github.io/KPong/">pong clones</a> its easy to get sloppy about the core techniques behind it all. CodeWars is a great site (amoung others) to practice the core stuff, solving challenges in an efficient way. It provides coding challenges to solve with the killer feature of seeing how others solved it once you are done.`,
+      `When you spend time on projects and making <a href="https://neosaurrrus.github.io/KPong/"  target="_blank">pong clones</a> its easy to get sloppy about the core techniques behind it all. CodeWars is a great site (amoung others) to practice the core stuff, solving challenges in an efficient way. It provides coding challenges to solve with the killer feature of seeing how others solved it once you are done.`,
       `resources/images/codewars.jpg`,
       "https://www.codewars.com"
     )
@@ -199,7 +199,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `Podcasts, Websites and Books`,
-      `Podcasts are great for times when your ears are free. Code Newbie is a great place to hear about people's coding journies and getting motivated, Syntax is great for keeping abreast of whats going on in Web Dev and plenty of tasty tips to try. CSS Tricks and Dev.to are my favourte websites to browse for Web Dev news. I prefer books for more UX related things, I can definately recommend Don't Make me Think and Design for Hackers. The 'why?' of what we make fascinates me, though sometimes there is just <a href="https://optimistic-shaw-3fa4ae.netlify.app/">no reason at all</a>.`,
+      `Podcasts are great for times when your ears are free. Code Newbie is a great place to hear about people's coding journies and getting motivated, Syntax is great for keeping abreast of whats going on in Web Dev and plenty of tasty tips to try. CSS Tricks and Dev.to are my favourte websites to browse for Web Dev news. I prefer books for more UX related things, I can definately recommend Don't Make me Think and Design for Hackers. The 'why?' of what we make fascinates me, though sometimes there is just <a href="https://optimistic-shaw-3fa4ae.netlify.app/"  target="_blank">no reason at all</a>.`,
       `resources/images/syntax.png`,
       "https://syntax.fm/"
     )
@@ -208,7 +208,7 @@ function originBuild() {
   originArray.push(
     new Origin(
       `FlatIron Software Engineering Bootcamp`,
-      `The glue that put it all together for me, Flatiron was instrumental in bringing things together and explaining the 'why' of the things we do.  I built a bunch of things as part of the course, but I have a sweet spot for the first project which was building a CLI app using Ruby: <a href="https://github.com/neosaurrrus/f1_competitors/">F1 Competitors</a>`,
+      `The glue that put it all together for me, Flatiron was instrumental in bringing things together and explaining the 'why' of the things we do.  I built a bunch of things as part of the course, but I have a sweet spot for the first project which was building a CLI app using Ruby: <a  target="_blank" href="https://github.com/neosaurrrus/f1_competitors/">F1 Competitors</a>`,
       `resources/images/flatironschool.png`,
       "https://flatironschool.com/"
     )
