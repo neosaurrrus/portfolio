@@ -1,5 +1,5 @@
 
-// Hey, if you are checking out how I made this portfolio. Note that I think the JS approach here is slightly mad but as its just for me, I can deal with it. 
+// Hey, if you are checking out how I made this portfolio. Note that I think the JS approach here is slightly mad but it is easy to work with so... :)
 
 //global variables - tut tut.
 let textOnLeft = false;
