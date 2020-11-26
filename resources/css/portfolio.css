@@ -8,6 +8,7 @@
   --darkbackground: rgb(30,79,51);
   --offblack: rgb(40,40,40);
   --highlight: rgb(255, 232, 29);
+  --offhighlight: rgb(255, 246, 168);
     font-size: 62.5%;
 }
 html{
@@ -39,6 +40,18 @@ h3{
 }
 h4{
     color: var(--text);  
+}
+h5{
+    line-height: 0;
+    text-align: center;
+}
+h5 a {
+    color: var(--highlight); 
+}
+
+h5 a:hover {
+    color: var(--text);
+    text-decoration: cornflowerblue;
 }
 p{
     font-family: Arial,Verdana, Geneva, Tahoma, sans-serif;

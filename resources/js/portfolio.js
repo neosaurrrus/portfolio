@@ -86,11 +86,13 @@ setInterval(function() {
 }, 5000);
 
 //defining constructors
-function Project(title, text, sidePic, codeLink) {
+function Project(title, text, sidePic, codeLink, appLink, videoLink) {
   (this.title = title),
     (this.text = text),
     (this.sidePic = sidePic),
-    (this.codeLink = codeLink);
+    (this.codeLink = codeLink),
+    (this.appLink = appLink),
+    (this.videoLink = videoLink)
 }
 function Origin(title, text, sidePic, codeLink) {
   (this.title = title),
@@ -100,11 +102,12 @@ function Origin(title, text, sidePic, codeLink) {
 }
 
 //function to build the relevent post in HTML
-function addContent(title, text, sidepic, codeLink, isLeft) {
+function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) {
   if (isLeft === true) {
     return `<section>
             <div class="leftbox textbox">
                 <h3>${title}</h3>
+                <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Video</a> </h5>
                 <p>${text}</p>
             </div>
             <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
@@ -112,10 +115,11 @@ function addContent(title, text, sidepic, codeLink, isLeft) {
         `;
   } else
     return `<section>
-            <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
+            <div class="sidebox"><a href="${codeLink}" target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
             <div class="rightbox textbox">
                <h3>${title}</h3>
-                <p>${text}</p>
+               <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Video</a> </h5>
+               <p>${text}</p>
             </div>
             </section>`;
 }
@@ -127,6 +131,8 @@ function projectBuild() {
       "Prompt Planning Poker",
       "Easy Estimation for SCRUM Teams. This app is an online version of the popular sprint planning tool, Planning Poker. Built with React and Redux on the Front End, with Ruby on Rails on the backend.",
       "resources/images/ppp.png",
+      "https://github.com/neosaurrrus/prompt-planning-poker",
+      "https://github.com/neosaurrrus/prompt-planning-poker",
       "https://github.com/neosaurrrus/prompt-planning-poker"
     )
   );
@@ -136,6 +142,8 @@ function projectBuild() {
       "Invite.li",
       "A No-fuss way to find dates between friends. The main focus was to be quick and painless with minimal hurdles. React on the Frontend while Firebase handles database duties here",
       "resources/images/inviteli.jpg",
+      "https://github.com/neosaurrrus/invitomatic",
+      "https://github.com/neosaurrrus/invitomatic",
       "https://github.com/neosaurrrus/invitomatic"
     )
   );
@@ -145,6 +153,8 @@ function projectBuild() {
       "SubsChef",
       "An app to record ingredients that can be swapped for other ingredients. Great if you don't have a certain recipe. Built entirely with Ruby on Rails",
       "resources/images/subschef.png",
+      "https://github.com/neosaurrrus/ingredient-substitutions/",
+      "https://github.com/neosaurrrus/ingredient-substitutions/",
       "https://github.com/neosaurrrus/ingredient-substitutions/"
     )
   );
@@ -153,6 +163,8 @@ function projectBuild() {
       "Stroll Trek Run",
       "A way to record your favourite walking trails. It uses JavaScript on the Frontend, It was made using Node, Express and MongoDB on the backend.",
       "resources/images/strolltrekrun.jpg",
+      "https://github.com/neosaurrrus/stroll-trek-run",
+      "https://github.com/neosaurrrus/stroll-trek-run",
       "https://github.com/neosaurrrus/stroll-trek-run"
     )
   );
@@ -226,6 +238,8 @@ projectArray.forEach(section => {
       section.text,
       section.sidePic,
       section.codeLink,
+      section.appLink, 
+      section.videoLink,
       textOnLeft
     )
   );
@@ -244,6 +258,8 @@ originArray.forEach(section => {
       section.text,
       section.sidePic,
       section.codeLink,
+      section.appLink, 
+      section.videoLink,
       textOnLeft
     )
   );
