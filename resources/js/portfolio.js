@@ -132,7 +132,7 @@ function projectBuild() {
       "Easy Estimation for SCRUM Teams. This app is an online version of the popular sprint planning tool, Planning Poker. Built with React and Redux on the Front End, with Ruby on Rails on the backend.",
       "resources/images/ppp.png",
       "https://github.com/neosaurrrus/prompt-planning-poker",
-      "https://github.com/neosaurrrus/prompt-planning-poker",
+      "https://promptplanningpoker.com",
       "https://github.com/neosaurrrus/prompt-planning-poker"
     )
   );
@@ -143,7 +143,7 @@ function projectBuild() {
       "A No-fuss way to find dates between friends. The main focus was to be quick and painless with minimal hurdles. React on the Frontend while Firebase handles database duties here",
       "resources/images/inviteli.jpg",
       "https://github.com/neosaurrrus/invitomatic",
-      "https://github.com/neosaurrrus/invitomatic",
+      "https://invite.li",
       "https://github.com/neosaurrrus/invitomatic"
     )
   );
@@ -154,20 +154,20 @@ function projectBuild() {
       "An app to record ingredients that can be swapped for other ingredients. Great if you don't have a certain recipe. Built entirely with Ruby on Rails",
       "resources/images/subschef.png",
       "https://github.com/neosaurrrus/ingredient-substitutions/",
-      "https://github.com/neosaurrrus/ingredient-substitutions/",
+      "http://www.subschef.com",
       "https://github.com/neosaurrrus/ingredient-substitutions/"
     )
   );
-  projectArray.push(
-    new Project(
-      "Stroll Trek Run",
-      "A way to record your favourite walking trails. It uses JavaScript on the Frontend, It was made using Node, Express and MongoDB on the backend.",
-      "resources/images/strolltrekrun.jpg",
-      "https://github.com/neosaurrrus/stroll-trek-run",
-      "https://github.com/neosaurrrus/stroll-trek-run",
-      "https://github.com/neosaurrrus/stroll-trek-run"
-    )
-  );
+  // projectArray.push( //need to get this app working again before readding!
+  //   new Project(
+  //     "Stroll Trek Run",
+  //     "A way to record your favourite walking trails. It uses JavaScript on the Frontend, It was made using Node, Express and MongoDB on the backend.",
+  //     "resources/images/strolltrekrun.jpg",
+  //     "https://github.com/neosaurrrus/stroll-trek-run",
+  //     "https://stroll-trek-run.herokuapp.com/",
+  //     "https://github.com/neosaurrrus/stroll-trek-run"
+  //   )
+  // );
 
 
 }
@@ -219,7 +219,7 @@ function originBuild() {
 
   originArray.push(
     new Origin(
-      `FlatIron Software Engineering Bootcamp`,
+      `Flatiron Software Engineering Bootcamp`,
       `The glue that put it all together for me, Flatiron was instrumental in bringing things together and explaining the 'why' of the things we do.  I built a bunch of things as part of the course, but I have a sweet spot for the first project which was building a CLI app using Ruby: <a  target="_blank" href="https://github.com/neosaurrrus/f1_competitors/">F1 Competitors</a>`,
       `resources/images/flatironschool.png`,
       "https://flatironschool.com/"
