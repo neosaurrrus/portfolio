@@ -107,7 +107,7 @@ function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) 
     return `<section>
             <div class="leftbox textbox">
                 <h3>${title}</h3>
-                <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Video</a> </h5>
+                <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Quick Vid</a> </h5>
                 <p>${text}</p>
             </div>
             <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
@@ -118,7 +118,7 @@ function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) 
             <div class="sidebox"><a href="${codeLink}" target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
             <div class="rightbox textbox">
                <h3>${title}</h3>
-               <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Video</a> </h5>
+               <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Quick Vid</a> </h5>
                <p>${text}</p>
             </div>
             </section>`;
@@ -133,7 +133,7 @@ function projectBuild() {
       "resources/images/ppp.png",
       "https://github.com/neosaurrrus/prompt-planning-poker",
       "https://promptplanningpoker.com",
-      "https://github.com/neosaurrrus/prompt-planning-poker"
+      "https://youtu.be/ckcuHt58TTA"
     )
   );
 
@@ -144,7 +144,7 @@ function projectBuild() {
       "resources/images/inviteli.jpg",
       "https://github.com/neosaurrrus/invitomatic",
       "https://invite.li",
-      "https://github.com/neosaurrrus/invitomatic"
+      "https://youtu.be/vBTZwiOLimA"
     )
   );
 
@@ -155,7 +155,7 @@ function projectBuild() {
       "resources/images/subschef.png",
       "https://github.com/neosaurrrus/ingredient-substitutions/",
       "http://www.subschef.com",
-      "https://github.com/neosaurrrus/ingredient-substitutions/"
+      "https://youtu.be/4VqJ_aabX5E"
     )
   );
   // projectArray.push( //need to get this app working again before readding!
