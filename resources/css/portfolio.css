@@ -221,6 +221,10 @@ section:nth-child(odd) {
     border-radius: 20px;
 }
 
+.textbox-text {
+    padding: 0 10px;
+}
+
 .rightbox{
     padding-left: 20px;
     padding-right: 10px;
