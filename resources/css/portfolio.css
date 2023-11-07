@@ -216,7 +216,7 @@ section:nth-child(odd) {
     background: rgba(0,0,0,0.2);
     flex-direction: column;
     justify-content: center;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     box-shadow: 10px 20px var(--darkbackground);
     border-radius: 20px;
 }
