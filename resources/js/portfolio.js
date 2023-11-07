@@ -1,5 +1,5 @@
 
-// Hey, if you are checking out how I made this portfolio. Note that I think the JS approach here is slightly mad but it is easy to work with so... :)
+// This is a awful way of doing what I am doing, do not do this for real but its just for me so I thought it dumb enough to amuse me 
 
 //global variables - tut tut.
 let textOnLeft = false;
@@ -125,18 +125,17 @@ function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) 
 }
 //build the Project items
 function projectBuild() {
-
   projectArray.push(
     new Project(
-      "Prompt Planning Poker",
-      "Easy Estimation for SCRUM Teams. This app is an online version of the popular sprint planning tool, Planning Poker. Built with React and Redux on the Front End, with Ruby on Rails on the backend.",
-      "resources/images/ppp.png",
-      "https://github.com/neosaurrrus/prompt-planning-poker",
-      "https://promptplanningpoker.com",
-      "https://youtu.be/ckcuHt58TTA"
+      "The Estimation Game",
+      "A modern version of my original planning poker game from 2019 to test some new tech. Uses NextJS, Tailwind and Supabase",
+      "resources/images/teg.png",
+      "https://github.com/neosaurrrus/beehive",
+      "https://theestimationgame.win",
+      "https://youtu.be/ckcuHt58TToA"
     )
   );
-
+  
   projectArray.push(
     new Project(
       "Invite.li",
@@ -158,18 +157,16 @@ function projectBuild() {
       "https://youtu.be/4VqJ_aabX5E"
     )
   );
-  // projectArray.push( //need to get this app working again before readding!
-  //   new Project(
-  //     "Stroll Trek Run",
-  //     "A way to record your favourite walking trails. It uses JavaScript on the Frontend, It was made using Node, Express and MongoDB on the backend.",
-  //     "resources/images/strolltrekrun.jpg",
-  //     "https://github.com/neosaurrrus/stroll-trek-run",
-  //     "https://stroll-trek-run.herokuapp.com/",
-  //     "https://github.com/neosaurrrus/stroll-trek-run"
-  //   )
-  // );
-
-
+  projectArray.push(
+    new Project(
+      "Prompt Planning Poker",
+      "Easy Estimation for SCRUM Teams. This app is an online version of the popular sprint planning tool, Planning Poker. Built with React and Redux on the Front End, with Ruby on Rails on the backend.",
+      "resources/images/ppp.png",
+      "https://github.com/neosaurrrus/prompt-planning-poker",
+      "https://promptplanningpoker.com",
+      "https://youtu.be/ckcuHt58TTA"
+    )
+  );
 }
 
 //build the origin items
