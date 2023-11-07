@@ -1,5 +1,5 @@
 
-// This is a awful way of doing what I am doing, do not do this for real but its just for me so I thought it dumb enough to amuse me 
+// This is a awful way of doing what I am doing, do not do this for real but its just a lazy CMS that works for its tiny use case
 
 //global variables - tut tut.
 let textOnLeft = false;
@@ -108,7 +108,7 @@ function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) 
             <div class="leftbox textbox">
                 <h3>${title}</h3>
                 <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Quick Vid</a> </h5>
-                <p>${text}</p>
+                <p class="textbox-text">${text}</p>
             </div>
             <div class="sidebox"><a href="${codeLink}"  target="_blank"><img class="sidepic" src="${sidepic}"></a></div>
         </section>
@@ -119,7 +119,7 @@ function addContent(title, text, sidepic, codeLink, appLink, videoLink, isLeft) 
             <div class="rightbox textbox">
                <h3>${title}</h3>
                <h5><a href="${codeLink}" target="_blank">GitHub</a> | <a href="${appLink}" target="_blank">App</a>  | <a href="${videoLink}" target="_blank">Quick Vid</a> </h5>
-               <p>${text}</p>
+               <p class="textbox-text">${text}</p>
             </div>
             </section>`;
 }
