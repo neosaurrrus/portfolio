@@ -1,4 +1,4 @@
-[Visit my Portfolio Site](www.lukiekang.com)
+[Visit my Portfolio Site](https://lukiekang.com)
 
 # Hey there!
 I am a Web Developer based in Maidenhead in the United Kingdom. Creating clever (or cleverly simple) things is what makes my days fly by. As the Web continues to reinvent itself at a mind-boggling pace, it's great being along for the ride!
